@@ -1637,10 +1637,9 @@
     <instance objName="platform" x="9120" y="480" name="inst_D477A2CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="platform" x="9120" y="512" name="inst_525346F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="platform" x="9120" y="544" name="inst_2CDACE05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTimer" x="32" y="32" name="inst_D7869E4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles>
-    <tile bgName="background1" x="992" y="544" w="32" h="32" xo="0" yo="0" id="10000001" name="inst_0A82F2DE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-  </tiles>
+  <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

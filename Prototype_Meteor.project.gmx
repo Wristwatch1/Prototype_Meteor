@@ -19,6 +19,7 @@
   <objects name="objects">
     <object>objects\platform</object>
     <object>objects\objPlayer</object>
+    <object>objects\objTimer</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
