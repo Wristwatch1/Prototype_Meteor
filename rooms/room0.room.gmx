@@ -1226,6 +1226,12 @@
     <instance objName="Platform3" x="6496" y="448" name="inst_4B4DF3F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform4" x="6464" y="480" name="inst_E79D11E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Platform6" x="6496" y="480" name="inst_0ECB5142" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invinciblock" x="992" y="544" name="inst_E9F50F28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invinciblock" x="960" y="544" name="inst_F5C4EED4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invinciblock" x="928" y="544" name="inst_EA3074AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invinciblock" x="896" y="544" name="inst_B41EC089" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invinciblock" x="864" y="544" name="inst_BF50DD03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invinciblock" x="832" y="544" name="inst_170B4E7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

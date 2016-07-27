@@ -46,6 +46,7 @@
   </scripts>
   <objects name="objects">
     <object>objects\platform</object>
+    <object>objects\Invinciblock</object>
     <object>objects\Platform1</object>
     <object>objects\Platform2</object>
     <object>objects\Platform3</object>
