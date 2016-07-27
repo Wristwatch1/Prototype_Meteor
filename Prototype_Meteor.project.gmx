@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\Background_Music</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprPlayer</sprite>
     <sprite>sprites\sprite1</sprite>
@@ -38,6 +40,11 @@
     <background>background\background1</background>
     <background>background\background2</background>
     <background>background\background3</background>
+    <background>background\farMountains</background>
+    <background>background\Clouds</background>
+    <background>background\Mount_Left</background>
+    <background>background\Mount_Mid</background>
+    <background>background\Mount_Right</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -70,6 +77,8 @@
     <object>objects\Tree</object>
     <object>objects\Fence</object>
     <object>objects\Bush</object>
+    <object>objects\backgroundControl</object>
+    <object>objects\Button</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

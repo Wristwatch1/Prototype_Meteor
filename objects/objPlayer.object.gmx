@@ -169,7 +169,7 @@ if(alive)
     
     if (crouching)
     {
-        //sprite_index = Crouching Sprite
+        sprite_index = sprCrouchingSprite
     }
     if (!crouching)
     {
