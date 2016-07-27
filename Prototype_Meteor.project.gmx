@@ -31,6 +31,7 @@
     <sprite>sprites\sprite23</sprite>
     <sprite>sprites\sprite24</sprite>
     <sprite>sprites\sprUnbreakableBlock</sprite>
+    <sprite>sprites\sprCrouchingSprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
