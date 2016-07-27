@@ -9,20 +9,68 @@
     <sprite>sprites\sprite0</sprite>
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite2</sprite>
+    <sprite>sprites\large_explosion</sprite>
+    <sprite>sprites\sprite3</sprite>
+    <sprite>sprites\sprite5</sprite>
+    <sprite>sprites\sprite7</sprite>
+    <sprite>sprites\sprite8</sprite>
+    <sprite>sprites\sprite9</sprite>
+    <sprite>sprites\sprite10</sprite>
+    <sprite>sprites\sprite11</sprite>
+    <sprite>sprites\sprite12</sprite>
+    <sprite>sprites\sprite13</sprite>
+    <sprite>sprites\sprite14</sprite>
+    <sprite>sprites\sprite15</sprite>
+    <sprite>sprites\sprite16</sprite>
+    <sprite>sprites\sprite17</sprite>
+    <sprite>sprites\sprite18</sprite>
+    <sprite>sprites\sprite19</sprite>
+    <sprite>sprites\sprite20</sprite>
+    <sprite>sprites\sprite21</sprite>
+    <sprite>sprites\sprite22</sprite>
+    <sprite>sprites\sprite23</sprite>
+    <sprite>sprites\sprite24</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
     <background>background\background2</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\spawn_meteor_leveltarget.gml</script>
+    <script>scripts\spawn_meteor_playertarget.gml</script>
+    <script>scripts\spawn_meteor_screentarget.gml</script>
+    <script>scripts\kill_player.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\platform</object>
+    <object>objects\Platform1</object>
+    <object>objects\Platform2</object>
+    <object>objects\Platform3</object>
+    <object>objects\Platform4</object>
+    <object>objects\Platform5</object>
+    <object>objects\Platform6</object>
+    <object>objects\Platform7</object>
+    <object>objects\Platform8</object>
     <object>objects\objPlayer</object>
     <object>objects\objTimer</object>
+    <object>objects\explosion</object>
+    <object>objects\falseexplosion</object>
+    <object>objects\meteorite</object>
+    <object>objects\meteorite2</object>
+    <object>objects\MeteorSpawner</object>
+    <object>objects\MenuBackground</object>
+    <object>objects\Log_o</object>
+    <object>objects\backgroundcollision</object>
+    <object>objects\Tree</object>
+    <object>objects\Fence</object>
+    <object>objects\Bush</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

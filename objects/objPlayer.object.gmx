@@ -32,6 +32,9 @@ vaccel = 0;
 walldir = 0;
 jump_height = 25
 grounded = false
+
+alive = true
+death_timer = 2000000
 </string>
           </argument>
         </arguments>
@@ -159,39 +162,51 @@ else
 
 
 
-
-if (place_meeting(x,y+1,platform))
+if(alive)
 {
-    grounded = true;
+    
+    if (place_meeting(x,y+1,platform))
+    {
+        grounded = true;
+    }
+    else
+    {
+        grounded = false;
+    }
+    if keyboard_check(ord("D"))
+    {
+        hspeed = spd
+        walldir = 0
+    }
+    if keyboard_check(ord("A"))
+    {
+        hspeed = -spd
+        walldir = 180
+    }
+    if keyboard_check(vk_right)
+    {
+        hspeed = spd
+        walldir = 0
+    }
+    if keyboard_check(vk_left)
+    {
+        hspeed = -spd
+        walldir = 180
+    }
+    if (keyboard_check(vk_space) &amp;&amp; !jumping &amp;&amp; grounded)
+    {
+        vspeed = -jump_height;
+        jumping = true;
+    }
 }
 else
 {
-    grounded = false;
-}
-if keyboard_check(ord("D"))
-{
-    hspeed = spd
-    walldir = 0
-}
-if keyboard_check(ord("A"))
-{
-    hspeed = -spd
-    walldir = 180
-}
-if keyboard_check(vk_right)
-{
-    hspeed = spd
-    walldir = 0
-}
-if keyboard_check(vk_left)
-{
-    hspeed = -spd
-    walldir = 180
-}
-if (keyboard_check(vk_space) &amp;&amp; !jumping &amp;&amp; grounded)
-{
-    vspeed = -jump_height;
-    jumping = true;
+    death_timer -= delta_time
+    
+    if(death_timer &lt; 0)
+    {
+        room_restart()
+    }
 }
 </string>
           </argument>
@@ -262,7 +277,18 @@ if (!place_free(x+hspeed,y+vspeed))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_restart()
+            <string>if(y &gt; room_height)
+{
+    //room_restart()
+    var vspd = vspeed
+    
+    
+    kill_player()
+    
+    vspeed = vspd
+    visible = true
+}
+
 </string>
           </argument>
         </arguments>
