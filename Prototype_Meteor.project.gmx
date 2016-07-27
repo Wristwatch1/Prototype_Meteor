@@ -67,12 +67,10 @@
     <object>objects\Tree</object>
     <object>objects\Fence</object>
     <object>objects\Bush</object>
-    <object>objects\objPlay</object>
-    <object>objects\object23</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
