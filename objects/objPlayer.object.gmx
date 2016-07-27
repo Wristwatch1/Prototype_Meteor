@@ -25,12 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>jumping = false;
+            <string>in_air = false;
+jumping = false;
+max_jump = false;
 gravity = 1;
 spd = 7;
 vaccel = 0;
 walldir = 0;
-jump_height = 25
+jump_height = 24
 grounded = false
 
 alive = true
@@ -193,10 +195,30 @@ if(alive)
         hspeed = -spd
         walldir = 180
     }
-    if (keyboard_check(vk_space) &amp;&amp; !jumping &amp;&amp; grounded)
+    if (keyboard_check_pressed(vk_space) &amp;&amp; !jumping &amp;&amp; grounded)
     {
-        vspeed = -jump_height;
+        in_air = true;
         jumping = true;
+    }
+    if (keyboard_check_released(vk_space))
+    {
+        in_air = false;
+        max_jump = true;
+        gravity = 1;
+    }
+    if (in_air)
+    {
+        if ((vspeed &gt; -jump_height) &amp;&amp; !max_jump) 
+        {
+            vspeed -=2;
+            gravity = 0;
+        }
+        if ((vspeed &lt;= -jump_height) &amp;&amp; !max_jump)
+        {
+            max_jump = true;
+            gravity = 1;
+        }
+        
     }
 }
 else
@@ -245,6 +267,7 @@ if (!place_free(x,y+vspeed))
     {
         move_contact_solid(270,abs(vspeed));
         jumping = false;
+        max_jump = false;
         
     }
     vspeed = 0;
